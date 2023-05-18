@@ -36,6 +36,7 @@ def discounted(price, discount, max_discount=20):
             return price - (price * discount / 100)
     except TypeError:
         print('TypeError: Некорректное значение')
+        return 'Неккоректные исходные данные'
 
 
 if __name__ == "__main__":
